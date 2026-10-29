@@ -111,4 +111,4 @@ const server = http.createServer(async (request, response) => {
   fs.createReadStream(filePath).pipe(response);
 });
 
-server.listen(PORT, () => console.log(`북웨이브 서버 실행: http://localhost:${PORT} (모델: ${MODEL})`));
+server.listen(PORT, '0.0.0.0', () => console.log(`북웨이브 서버 실행: http://localhost:${PORT} (모델: ${MODEL})`));
